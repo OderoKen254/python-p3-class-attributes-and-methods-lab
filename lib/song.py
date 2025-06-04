@@ -27,4 +27,41 @@ class Song:
         self.add_to_genre_count()
         self.add_to_artist_count()
 
+    # Property methods for validation
+    @property
+    def name(self):
+        """Return the song's name."""
+        return self._name
+
+    @name.setter
+    def name(self, value):
+        """Validate and set the song's name."""
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError("Song name must be a non-empty string")
+        self._name = value
+
+    @property
+    def artist(self):
+        """Return the song's artist."""
+        return self._artist
+
+    @artist.setter
+    def artist(self, value):
+        """Validate and set the song's artist."""
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError("Artist name must be a non-empty string")
+        self._artist = value
+
+    @property
+    def genre(self):
+        """Return the song's genre."""
+        return self._genre
+
+    @genre.setter
+    def genre(self, value):
+        """Validate and set the song's genre."""
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError("Genre must be a non-empty string")
+        self._genre = value
+
     
