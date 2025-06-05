@@ -64,34 +64,4 @@ class Song:
             raise ValueError("Genre must be a non-empty string")
         self._genre = value
 
-    # # Class methods
-    # @classmethod
-    # def add_song_to_count(cls):
-    #     """Increment the total song count."""
-    #     cls.count += 1
-
-    # @classmethod
-    # def add_to_genres(cls):
-    #     """Add unique genres to the genres list."""
-    #     # Convert genres list to a list of unique genres
-    #     cls.genres = list(dict.fromkeys(cls.genres))
-
-    # @classmethod
-    # def add_to_artists(cls):
-    #     """Add unique artists to the artists list."""
-    #     # Convert artists list to a list of unique artists
-    #     cls.artists = list(dict.fromkeys(cls.artists))
-
-    # @classmethod
-    # def add_to_genre_count(cls):
-    #     """Update the genre_count dictionary with the number of songs per genre."""
-    #     cls.genre_count = {}  # Reset dictionary
-    #     for genre in cls.genres:
-    #         cls.genre_count[genre] = cls.genre_count.get(genre, 0) + 1
-
-    # @classmethod
-    # def add_to_artist_count(cls):
-    #     """Update the artist_count dictionary with the number of songs per artist."""
-    #     cls.artist_count = {}  # Reset dictionary
-    #     for artist in cls.artists:
-    #         cls.artist_count[artist] = cls.artist_count.get(artist, 0) + 1
+  
